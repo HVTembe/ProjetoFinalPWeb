@@ -1,0 +1,339 @@
+:root {
+    --primary-color: #8B0000; /* Vinho */
+    --secondary-color: #333;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --society-color: #4CAF50;
+    --economy-color: #2196F3;
+    --sports-color: #FF9800;
+    --culture-color: #9C27B0;
+    --international-color: #607D8B;
+    --politics-color: #F44336;
+    --briefs-color: #00BCD4;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.top-bar {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.top-bar span {
+    margin-right: 15px;
+}
+
+.social-icon {
+    color: white;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.main-header {
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.main-header h1 {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+.logo {
+    max-height: 100px;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.badge {
+    font-weight: normal;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.badge-primary {
+    background-color: var(--politics-color);
+}
+
+.badge-secondary {
+    background-color: var(--economy-color);
+}
+
+.badge-success {
+    background-color: var(--sports-color);
+}
+
+.btn-read-more {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.btn-read-more:hover {
+    background-color: #6d0000;
+    color: white;
+}
+
+.author {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.sidebar-widget {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.widget-title {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.main-footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 40px;
+}
+
+.footer-logo {
+    max-height: 80px;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Estilos específicos para cada seção */
+#sociedade .section-title,
+.society-badge {
+    color: var(--society-color);
+    border-color: var(--society-color);
+}
+
+#economia .section-title,
+.economy-badge {
+    color: var(--economy-color);
+    border-color: var(--economy-color);
+}
+
+#desporto .section-title,
+.sports-badge {
+    color: var(--sports-color);
+    border-color: var(--sports-color);
+}
+
+#cultura .section-title,
+.culture-badge {
+    color: var(--culture-color);
+    border-color: var(--culture-color);
+}
+
+#internacional .section-title,
+.international-badge {
+    color: var(--international-color);
+    border-color: var(--international-color);
+}
+
+#politica .section-title,
+.politics-badge {
+    color: var(--politics-color);
+    border-color: var(--politics-color);
+}
+
+#breves .section-title,
+.briefs-badge {
+    color: var(--briefs-color);
+    border-color: var(--briefs-color);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 24px;
+    }
+    
+    .card-img-top {
+        height: 150px;
+    }
+    
+    .news-item .row {
+        flex-direction: column;
+    }
+    
+    .news-item img {
+        margin-bottom: 15px;
+    }
+}
+/* Estilos para o carrossel de publicidade */
+.sidebar-widget .carousel {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-widget .carousel-inner {
+    border-radius: 5px;
+}
+
+.sidebar-widget .carousel-item img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.sidebar-widget .carousel-caption {
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.sidebar-widget .carousel-caption p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.sidebar-widget .carousel-indicators {
+    margin-bottom: 0;
+    bottom: 5px;
+}
+
+.sidebar-widget .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+.sidebar-widget .carousel-control-prev,
+.sidebar-widget .carousel-control-next {
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+}
+
+.sidebar-widget .carousel-control-prev {
+    left: 10px;
+}
+
+.sidebar-widget .carousel-control-next {
+    right: 10px;
+}
+/* Estilos para o modal */
+.modal {
+    z-index: 1060;
+}
+
+.modal-content {
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-header {
+    background-color: var(--primary-color);
+    color: white;
+    border-bottom: none;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.close {
+    color: white;
+    text-shadow: none;
+    opacity: 0.8;
+}
+
+.close:hover {
+    color: white;
+    opacity: 1;
+}
+
+/* Botão de assinatura */
+.btn-subscribe {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-subscribe:hover {
+    background-color: #6d0000;
+    border-color: #6d0000;
+}
